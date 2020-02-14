@@ -432,7 +432,7 @@ Since there is serial correlation and heteroskedasticity in our model, we should
 | spirits | 0.967 | 0.136 | 7.129  | 8.857e-12 |  | 0.967 | 0.138 | 7.020 | 1.719e-11 | |
 | unemp | -0.244 | 0.046 | -5.304 | 2.325e-07 |   | -0.244 | 0.052 | -4.729 | 3.610e-06 |  |
 | income | 0.343 | 0.080 | 4.303 | 2.338e-05 |   | 0.343 | 0.125 | 2.746 | 0.006 |  |
-| beertax | -0.376 | 0.130 | -2.89 | 0.004 |  | -0.376 | 0.200 | -1.876 | 0.004 |  |
+| beertax | -0.376 | 0.130 | -2.89 | 0.004 |  | -0.376 | 0.200 | -1.876 | 0.062 |  |
 | jailyes | 0.077 | 0.099 | 0.777 | 0.438 |   | 0.077 | 0.163 | 0.471 | 0.638 |  |
 
 (The left is original model and the right is after correction model)
@@ -545,7 +545,7 @@ ggdag(dag)
 
 Based on the previous analysis, following conclusion can be drawn: at significance level = 0.1, four variables (spirit consumption, unemployment, income and beertax) in our model are all significant to fatal rate. (a) In particular, given other variables fixed, the fatal rate will increase if the spirit consumption increases. This makes sense because if people spend more money on alcohol, then the possibility of drunk driving will increase. (b) Given other variables fixed, the fatal rate will decrease if the unemployment increases. It is because if the unemployment is relatively high, then the purchasing ability of the resident will be at relative low level. More people can not buy personal vehicles and so the fatal rate would be relatively lower. (c) Given other variables fixed, the fatal rate will increase if the income increases. This also makes sense because if the income for residents increases, more people can buy the personal vehicles and the possibility of using personal vehicles would increase. More vehicles in the road, fatal rate would be potentially higher. (d) Given other variables fixed, the fatal rate will decrease if the beertax increases. The increasement of beertax would decrease the possibility of alcohol consuming, which further decrease the possibility of drunk driving and then decrease the fatal rate.
 
-In general, following suggestions could be make to the policymakers. (a) Make appropriate legislation to limit the spirits consumption and alcohol using. This can reduce the possibility of drunk driving in the state. (b) Increase the beertax appropriately. This method can also decrease the alcohol consumption. (c) Another feasible way to control the fatal rate is to improve the awareness of the residents who have high income. (d) Besides, further study conducted by other researchers shows that increase the legal drinkage could also reduce the vehicle fatal rate of resident in particular age group. 
+In general, following suggestions could be make to the policymakers. (a) Make appropriate legislation to limit the spirits consumption and alcohol using. This can reduce the possibility of drunk driving in the state. (b) Increase the beertax appropriately. This method can also decrease the alcohol consumption. (c) Another feasible way to control the fatal rate is to improve the awareness of the residents who have high income. (d) Besides, further study conducted by other researchers shows that increase the legal drinkage could also reduce the vehicle fatal rate of resident in particular age group. [1][2]
 
 \newpage
 
@@ -576,7 +576,9 @@ print(sessionInfo(), local = FALSE)
 ## 5.3 Resources
 
 [1.] https://rstudio-pubs-static.s3.amazonaws.com/372492_3e05f38dd3f248e89cdedd317d603b9a.html#43_random_effects_model. (Getting Started in Fixed/Random Effects Models using R)
+
 [2.] https://sejdemyr.github.io/r-tutorials/statistics/tutorial8.html#estimating-treatment-effects. (R Tutorial 8: Propensity Score Matching)
+
 [3.] https://www.schmidheiny.name/teaching/panel2up.pdf (Short Guides to Microeconometrics, Panel Data: Fixed and Random Effects)
 
 ## 5.4 Github information
